@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АЙТЕК — Надёжные решения для вашего бизнеса</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">АЙТЕК</a>
+    <div class="nav-menu">
+      <a href="#services">Услуги</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#about">О нас</a>
+    </div>
+    <button class="nav-btn" onclick="scrollToSection('contact')">Обсудить проект</button>
+    <button class="nav-burger" aria-label="Меню" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="mobileNav">
+    <a href="#services" onclick="toggleMobileNav()">Услуги</a>
+    <a href="#cases"    onclick="toggleMobileNav()">Кейсы</a>
+    <a href="#about"    onclick="toggleMobileNav()">О нас</a>
+    <a href="#contact"  onclick="toggleMobileNav()">Контакты</a>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero__content">
+    <h1 class="hero__title">Надёжные решения для вашего бизнеса</h1>
+    <p class="hero__sub">Мы внедряем безопасные практики DevSecOps на всех этапах жизни продукта — от архитектуры до релиза. Это снижает затраты на кибербезопасность, минимизирует уязвимости и защищает ваш бизнес от простоя, утечек данных и репутационных потерь.</p>
+    <div class="hero__btns">
+      <button class="btn-primary" onclick="scrollToSection('contact')">Связаться</button>
+      <button class="btn-outline" onclick="scrollToSection('cases')">Кейсы</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <h2 class="section__title">О нас</h2>
+    <div class="about__text">
+      <p>Мы команда профессиональных разработчиков, объединённых целью: создавать мощное и стабильное ПО, которое решает реальные задачи бизнеса.</p>
+      <p>Что вы получите с «Айтек»:</p>
+      <div class="about__perks">
+        <span>Прозрачность</span>
+        <span>Экспертизу</span>
+        <span>Поддержку 24/7</span>
+      </div>
+      <p>За нашими плечами — десятки успешных проектов: от мобильных приложений до ERP-систем для крупного ритейла.</p>
+    </div>
+        <div class="about__photos">
+    <div class="about__photo">
+        <img src="images/фото 1.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+    </div>
+    <div class="about__photo">
+        <img src="images/фото 2.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+    </div>
+    <div class="about__photo">
+        <img src="images/фото 3.jpg" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+    </div>
+    <div class="about__photo">
+        <img src="images/фото 4.jpg"  style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+    </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <h2 class="section__title">Каталог услуг</h2>
+    <div class="services__grid">
+      <div class="service-card">
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="36" height="26" rx="3"/><path d="M15 36h14M22 32v4"/></svg>
+        <h3 class="service-card__title">Разработка ПО на заказ</h3>
+        <p class="service-card__text">Создаём программные продукты под ваши задачи. Настройте софт под свой бизнес, а не наоборот</p>
+        <svg class="service-card__icon-bg" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="36" height="26" rx="3"/><path d="M15 36h14M22 32v4"/></svg>
+      </div>
+      <div class="service-card">
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M30 6l8 8-22 22H8v-8L30 6z"/><path d="M26 10l8 8"/></svg>
+        <h3 class="service-card__title">UX/UI-дизайн</h3>
+        <p class="service-card__text">Разрабатываем удобный и интуитивно понятный дизайн для вашего программного обеспечения</p>
+        <svg class="service-card__icon-bg" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M30 6l8 8-22 22H8v-8L30 6z"/><path d="M26 10l8 8"/></svg>
+      </div>
+      <div class="service-card">
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="36" height="36" rx="3"/><path d="M4 15h36M4 29h36M18 4v36"/></svg>
+        <h3 class="service-card__title">Веб-разработка</h3>
+        <p class="service-card__text">Проектируем и программируем веб-приложения для автоматизации бизнес-процессов</p>
+        <svg class="service-card__icon-bg" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="36" height="36" rx="3"/><path d="M4 15h36M4 29h36M18 4v36"/></svg>
+      </div>
+      <div class="service-card">
+       <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="38" x2="40" y2="38"/>
+            <rect x="8" y="22" width="6" height="16" rx="1"/>
+            <rect x="19" y="14" width="6" height="24" rx="1"/>
+            <rect x="30" y="6" width="6" height="32" rx="1"/>
+        </svg>
+        <h3 class="service-card__title">Аналитика данных</h3>
+        <p class="service-card__text">Собираем, обрабатываем и анализируем данные для оптимизации бизнес-процессов</p>
+       <svg class="service-card__icon-bg" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" y1="38" x2="40" y2="38"/>
+        <rect x="8" y="22" width="6" height="16" rx="1"/>
+        <rect x="19" y="14" width="6" height="24" rx="1"/>
+        <rect x="30" y="6" width="6" height="32" rx="1"/>
+    </svg>
+      </div>
+      <div class="service-card">
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="2,6 2,14 10,14"/><polyline points="42,38 42,30 34,30"/>
+          <path d="M5 20a16 16 0 0 1 27-9.4L42 6"/><path d="M39 24a16 16 0 0 1-27 9.4L2 38"/>
+        </svg>
+        <h3 class="service-card__title">Интеграция с другими системами</h3>
+        <p class="service-card__text">Обеспечим бесшовный обмен данными, автоматизацию бизнес-процессов и оптимизацию работы всего предприятия</p>
+        <svg class="service-card__icon-bg" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="2,6 2,14 10,14"/><polyline points="42,38 42,30 34,30"/>
+          <path d="M5 20a16 16 0 0 1 27-9.4L42 6"/><path d="M39 24a16 16 0 0 1-27 9.4L2 38"/>
+        </svg>
+      </div>
+      <div class="service-card">
+        <svg class="service-card__icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="12" width="36" height="9" rx="4"/><rect x="4" y="26" width="36" height="9" rx="4"/><circle cx="11" cy="16.5" r="2" fill="currentColor" stroke="none"/><circle cx="11" cy="30.5" r="2" fill="currentColor" stroke="none"/></svg>
+        <h3 class="service-card__title">Техподдержка</h3>
+        <p class="service-card__text">Надёжная поддержка 24/7 — ваши задачи решаются здесь и сейчас</p>
+        <svg class="service-card__icon-bg" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="12" width="36" height="9" rx="4"/><rect x="4" y="26" width="36" height="9" rx="4"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cases">
+  <div class="wrap">
+    <h2 class="section__title">Продукты и кейсы</h2>
+    <div class="cases__grid">
+      <div class="case-featured">
+        <div>
+          <h3>Автоматизация учёта лекарств</h3>
+          <p>Разработали специализированное ПО для автоматического списания лекарственных препаратов по истечении срока годности. Благодаря внедрению системы удалось сократить товарные потери на 15%. Кроме того, полностью исключена возможность продажи просроченных лекарств, что повысило безопасность для клиентов.</p>
+        </div>
+        <div class="case-featured__img">
+          <img src="images/лекарства.jpg" alt="Автоматизация учёта лекарств">
+        </div>
+      </div>
+      <div class="case-right">
+        <div class="case-row">
+          <div class="case-row__body">
+            <h3>CRM для отдела продаж</h3>
+            <p>Внедрили CRM-систему с автоматизацией воронки продаж. Интегрировали с телефонией и почтой. Конверсия выросла на 35%, время обработки заявки сократилось с 2 часов до 15 минут.</p>
+          </div>
+          <div class="case-row__img">
+            <img src="images/CRM.jpg" alt="CRM система">
+          </div>
+        </div>
+        <div class="case-row">
+          <div class="case-row__body">
+            <h3>Система управления складом</h3>
+            <p>Разработали WMS с поддержкой штрихкодирования и адресного хранения. Скорость отгрузки увеличилась на 40%, точность учёта — 99.8%.</p>
+          </div>
+          <div class="case-row__img">
+            <img src="images/склад.jpg" alt="Система управления складом">
+          </div>
+        </div>
+      </div>
+      <div class="case-bottom">
+        <div class="case-col">
+          <div class="case-col__body">
+            <h3>HR-портал для крупной сети</h3>
+            <p>Создали портал для 2000+ сотрудников: кадровый учёт, отпуска, больничные, обучение. Время оформления документов сократилось в 3 раза.</p>
+          </div>
+          <div class="case-col__img">
+            <img src="images/HR.jpg" alt="HR портал">
+          </div>
+        </div>
+        <div class="case-col">
+          <div class="case-col__body">
+            <h3>Система аналитики для ритейла</h3>
+            <p>Разработали дашборды с прогнозированием спроса и ABC-анализом. Компания оптимизировала запасы, высвободив 20 млн ₽ оборотных средств.</p>
+          </div>
+          <div class="case-col__img">
+            <img src="images/Ритейл.jpg" alt="Система аналитики для ритейла">
+          </div>
+        </div>
+        <div class="case-col">
+          <div class="case-col__body">
+            <h3>Мобильное приложение для логистики</h3>
+            <p>Приложение для курьеров с маршрутизацией и трекингом. Время доставки сократилось на 25%, количество успешных доставок выросло на 18%.</p>
+          </div>
+          <div class="case-col__img">
+            <img src="images/логистика.jpg" alt="Мобильное приложение для логистики">
+          </div>
+        </div>
+        <div class="case-col">
+          <div class="case-col__body">
+            <h3>Электронный документооборот</h3>
+            <p>Внедрили СЭД с электронной подписью и маршрутизацией документов. Бумажный документооборот сократился на 70%, время согласования — с 5 дней до 4 часов.</p>
+          </div>
+          <div class="case-col__img">
+            <img src="images/докуменооборот.jpg" alt="Электронный документооборот">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <h2 class="section__title">Часто задаваемые вопросы</h2>
+    <div class="faq__list">
+      <div class="faq__item">
+        <button class="faq__question" onclick="toggleFaq(this)">Сколько обычно стоит разработка программы?<span class="faq__plus">+</span></button>
+        <div class="faq__answer"><p>Стоимость зависит от сложности и масштаба проекта. Небольшие автоматизации стартуют от 100 000 ₽, комплексные системы — от 500 000 ₽. Мы всегда составляем детальную смету после брифинга и фиксируем её в договоре — никаких скрытых платежей.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question" onclick="toggleFaq(this)">Какие технологии вы используете?<span class="faq__plus">+</span></button>
+        <div class="faq__answer"><p>Выбор стека зависит от задачи. Backend: Python, Java, Node.js, Go. Frontend: React, Vue. Мобильные: Flutter, React Native. Базы данных: PostgreSQL, MongoDB. Инфраструктура: Docker, Kubernetes, CI/CD на GitLab и GitHub Actions.</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__question" onclick="toggleFaq(this)">Какие гарантии вы даёте на разработанное ПО?<span class="faq__plus">+</span></button>
+        <div class="faq__answer"><p>Мы предоставляем гарантию на код в течение 6 месяцев с момента сдачи проекта. За это время все выявленные ошибки исправляем бесплатно. Также предлагаем постоянное сопровождение по SLA с временем реакции на критические инциденты до 1 часа.</p></div>
+      </div>
+    </div>
+    <p class="faq__note">Готовы ответить на ваши вопросы по процессу разработки ПО в нашей компании. Оперативно рассчитаем стоимость проекта. Для этого заполните форму ниже или напишите нам на <a href="mailto:example@gmail.com" style="color:#555">example@gmail.com</a></p>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <h2 class="section__title">Отзывы</h2>
+    <div class="reviews__slider">
+      <div class="reviews__track" id="reviewsTrack">
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Работали с компанией над запуском интернет-магазина. Поразила скорость и чёткость: ТЗ разобрали за день, прототип показали через неделю. Всё сделали в срок, без доплат и сюрпризов. Однозначно будем обращаться снова!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Ольга П.</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Разрабатывали CRM для отдела продаж. Сделали быстро и качественно: за неделю прототип, ещё через две — готовую систему. Интегрировали с 1С, всё работает. Без задержек и сюрпризов. Будем сотрудничать!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Александр В.</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Заказывали мобильное приложение для логистики. Команда сработала отлично: учли все пожелания, сделали в срок. Приложение стабильное, клиенты довольны. Рекомендую «Айтек» как надёжного подрядчика!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Марина К.</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Автоматизировали складской учёт. Теперь всё работает автоматически: штрихкоды, инвентаризация, отчёты. Сэкономили кучу времени. Сделали всё чётко, без косяков. Спасибо за профессионализм!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Дмитрий С.</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Разрабатывали личный кабинет для клиентов. Учли все наши пожелания, предложили удобные решения. Клиенты оценили — обращений в поддержку стало меньше. Приятно работать с профессионалами!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Елена М.</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Интегрировали несколько сервисов в одну систему. Сделали всё быстро: API, синхронизация данных, вебхуки. Техподдержка всегда на связи. Всё работает как часы. Однозначно рекомендую!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Андрей Р.</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Модернизировали старую систему учёта. Обновили интерфейс, добавили облачную синхронизацию. Теперь работаем из любой точки. Всё стабильно, без глюков. Спасибо команде за отличную работу!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Наталья Б.</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Заказывали ERP-систему для ритейла. Разработчики быстро разобрались в наших процессах, предложили оптимальное решение. Сделали в срок, без доплат. Работаем уже полгода — всё отлично!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Сергей Л.</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="review-card__star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="review-card__body">
+            <p class="review-card__text">«Дорабатывали существующее ПО: исправили ошибки, добавили новый функционал. Провели аудит кода, всё оптимизировали. Прозрачно и профессионально. Планируем дальше сотрудничать с «Айтек»!»</p>
+            <div><div class="review-card__divider"></div><div class="review-card__name">Ирина Ф.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews__nav">
+      <button class="reviews__arrow" id="reviewPrev" onclick="slideReviews(-1)" aria-label="Назад">&#8249;</button>
+      <div class="reviews__dots" id="reviewDots"></div>
+      <button class="reviews__arrow" id="reviewNext" onclick="slideReviews(1)" aria-label="Вперёд">&#8250;</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <h2 class="form__title">Форма отправки</h2>
+    <p class="form__desc">Напишите нам через форму ниже и наш менеджер свяжется с вами в ближайшее время</p>
+    <form class="contact-form" onsubmit="return false;">
+      <div class="form__row">
+        <div class="form__field">
+          <input class="form__input" type="text" placeholder="Имя*" data-validate="name">
+          <div class="form__error"></div>
+        </div>
+        <div class="form__field">
+          <input class="form__input" type="tel" placeholder="Телефон*" data-validate="phone">
+          <div class="form__error"></div>
+        </div>
+        <div class="form__field">
+          <input class="form__input" type="email" placeholder="Email*" data-validate="email">
+          <div class="form__error"></div>
+        </div>
+      </div>
+      <textarea class="form__textarea" placeholder="Опишите вашу задачу / проблему"></textarea>
+      <button class="form__submit" type="button" onclick="submitForm(this)" disabled>Отправить</button>
+      <label class="form__consent">
+        <input type="checkbox" class="form__checkbox">
+        <span>Я даю согласие на обработку персональных данных согласно условию политики конфиденциальности</span>
+      </label>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <a href="#hero" class="footer__logo">АЙТЕК</a>
+      <div class="footer__contacts">
+        <a href="mailto:example@gmail.com">example@gmail.com</a>
+        <a href="tel:+71234567890">+7 (123) 456-78-90</a>
+      </div>
+    </div>
+    <nav class="footer__nav">
+      <a href="#services">Услуги</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#about">О нас</a>
+    </nav>
+    <div class="footer__policy">
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
