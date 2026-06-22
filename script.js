@@ -75,7 +75,7 @@ const validators = {
   },
   phone: (value) => {
     const cleaned = value.replace(/\D/g, '');
-    if (!/^(\+?7|8)?\d{10}$/.test(cleaned)) {
+    if (!/^(\+?7|8)\d{10}$/.test(cleaned)) {
       return { valid: false, message: 'Формат: +7 (XXX) XXX-XX-XX' };
     }
     return { valid: true, message: '' };
